@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        canvas {
+            display: block;
+        }
+
+    </style>
+	<link rel="stylesheet" href="css/test.css">
+	<link rel="stylesheet" href="css/select_object.css">
+	<script src="lib/three.js"></script>
+	<script src="lib/js/loaders/OBJLoader.js"></script>
+	<script src="lib/js/loaders/MTLLoader.js"></script>
+	<script src="lib/js/controls/OrbitControls.js"></script>
+	<script src="lib/js/libs/stats.min.js"></script>
+	<script src="lib/js/libs/dat.gui.min.js"></script>
+	<script src="lib/js/controls/TrackballControls.js"></script>
+	<!--拖拽控件-->
+	<script src="lib/js/controls/DragControls.js"></script>
+	<!--可视化平移控件-->
+	<script src="lib/js/controls/TransformControls.js"></script>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src ="js/webgl_part.js"></script>
+<div id="app">
+	<div>
+		<div style="position: absolute;top:10px;left: 50px;width: 500px;height: 50px">
+			<button class="button_style" @click="ChangeModel('translate')">
+				平移模式
+			</button>
+			<button class="button_style" @click="ChangeModel('rotate')">
+				旋转模式
+			</button>
+			<button class="button_style" @click="ChangeModel('scale')">
+				缩放模式
+			</button>
+		</div>
+		<div style="position: absolute;top:10px;right: 50px;width: 400px;height: 50px">
+			<button class="button_style" @click="Add('shelves')">
+				添加货架
+			</button>
+			<button class="button_style" @click="Add('tools')">
+				添加工具
+			</button>
+			<button class="button_style" @click="Save">
+				保存场景
+			</button>
+		</div>
+	</div>
+	<div style="position: absolute;top:15%;left:25%;background: wheat;padding: 20px" v-if="gridShow">
+		<select style="margin: 20px;font-size: 1.25rem" v-if="objType=='工具'" id="select_shelf" @change="UpdateLight">
+			<option style="font-size: 1.25rem" v-for="(item,index) in shelvesData" :value="item" v-text="item"></option>
+		</select>
+		<select style="margin: 20px;font-size: 1.25rem" v-if="objType=='工具'" id="select_light">
+			<option style="font-size: 1.25rem" v-for="(item,index) in lightData" :value="item" v-text="item"></option>
+		</select>
+		<div id ="grid" class="grid" >
+			<label class="card" v-for="(item,index) in gridData" v-cloak>
+				<input name="card__input" class="card__input" type="checkbox"  autocomplete="off"/>
+				<div class="card__body" v-if="item != null" >
+					<div class="card__body-cover">
+						<img class="card__body-cover-image" :src="'lib/model/'+item+'/image.png'"/>
+						<span class="card__body-cover-chackbox">
+          <svg class="card__body-cover-chackbox--svg" viewBox="0 0 12 10">
+            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+          </svg></span></div>
+					<header class="card__body-header">
+						<p class="card__body-header-subtitle"  v-text="item"></p>
+					</header>
+				</div>
+			</label>
+		</div>
+		<div>
+			<button  style="float: left;display: inline;margin: 15px;height: 35px;font-size: 1.25rem;color: #595454;" @click="AddObj">添加</button>
+			<button  style="float:right;display: inline;margin: 15px;height: 35px;font-size: 1.25rem;color: #595454;" @click="Close">关闭</button>
+		</div>
+	</div>
+
+</div>
+<script src ="js/function_part.js"></script>
+</body>
+</html>
+

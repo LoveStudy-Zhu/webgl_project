@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html style="height: 100%;overflow: hidden;">
+<head>
+    <title>B页面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body style="height: 100%;overflow: hidden;">
+<h4>B页面</h4>
+<button id="bt" οnclick="show()">获取参数</button>
+<script type="text/javascript">
+    var str=this.location.search;
+    var val1=str.split("name=");
+    var val2=val1[1];
+    //url解码
+    val2=decodeURI(val2);
+    function show(){
+        alert(val2);
+    }
+</script>
+</body>
+</html>

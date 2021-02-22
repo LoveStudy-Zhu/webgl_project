@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>积分商城</title>
+  <link rel="stylesheet" href="./src/css/积分商城.css">
+  <link rel="stylesheet" href="./src/css/iconfont.css">
+</head>
+
+<body>
+  <div id="container" class="grid">
+    <-- <header class="page-header">积分商城</header> -->
+    <!-- 首页 -->
+    <div class="grid-item" v-for="(item, index) in goods" v-show="navigator==1">
+      <a :href="item.link">
+        <img :src="item.preview_img" alt="" class="preview-img">
+        <div class="info">
+          <div class="title">{{ item.product_name }}</div>
+          <div class="price">￥{{ item.price }}</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 购物车 -->
+    <div class="shopping-cart" v-show="navigator==2">
+      <div class="cart-item" v-for="(item, index) in shoppingCart">
+        <div class="preview-img">
+          <img :src="item.preview_img" alt="">
+        </div>
+        <div class="info">
+          <p class="title">{{item.product_name}}</p>
+          <p class="price">￥{{item.price}}</p>
+        </div>
+      </div>
+      <!-- 底部结算条 -->
+      <div id="settle-accounts">
+        <p id="total-price"><span style="color: #333;">合计：</span>￥{{cartTotalPrice}}</p>
+        <div id="settle-btn"><span>结算</span></div>
+      </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="navigator-bar">
+      <div class="navigator-item home-page" :class="{'active':navigator==1}" @click="navigator=1">
+        <span class="icon iconfont icon-shouyeshouye"></span>
+        <p class="name">首页</p>
+      </div>
+      <div class="navigator-item chart-page" :class="{'active':navigator==2}" @click="navigator=2">
+        <span class="icon iconfont icon-gouwuche"></span>
+        <p class="name">购物车</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./src/js/couponStoreData.js"></script>
+  <script src="./src/js/vue.min.js"></script>
+  <script src="./src/js/masonry.pkgd.min.js"></script>
+  <script src="./src/js/积分商城.js"></script>
+</body>
+
+</html>

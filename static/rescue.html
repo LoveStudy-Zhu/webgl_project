@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+		<meta charset="utf-8">
+		<title>城市拯救计划</title>
+		<link rel="stylesheet" type="text/css" href="css/style_rescue.css">
+	</head>
+	<body>
+		<img id="back" class="back" src="img/backcolor.jpg"></img>
+		<img class="backpicture" src="img/城市.jpg">
+		<div class="main">
+			<div id="title" class="title"  @click="Back">
+				<img src="img/arrow-lift.png" style="float: left;width: 40px;height: 40px;" />
+				<div style="float: left;">城市拯救计划</div>
+			</div>
+			<div class="weather">
+				<div class="rate" style="float: left;width: 30%;box-sizing: border-box;padding-left: 10px;">
+						<div class="con">
+						  <div class="percent-circle percent-circle-left">
+						    <div class="left-content"></div>
+						  </div>
+						  <div class="percent-circle percent-circle-right">
+						    <div class="right-content"></div>
+						  </div>
+						  <div class="text-circle">0%</div>
+						</div>
+				</div>
+				<div style="color: #222222;float: left;;width: 60%;font-size: 1.3rem;">
+					良&nbsp&nbsp<small style="color: #585858;">无锡市&nbsp锡山区</small>
+					<div style="margin: 10px 0;color: #797979;font-size: 0.95rem;">今天减碳量为1000t，我大锡山的空气比昨天好好多呢！</div>
+					<div style="color: #39B54A;">谢谢您贡献的1000g减碳量</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script  src="js/script_back.js"></script>
+		<script type="text/javascript" src="js/script_rescue.js">
+			
+		</script>
+	</body>
+</html>

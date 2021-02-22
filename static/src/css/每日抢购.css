@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-size: 16px;
+    background: rgba(226, 228, 233, 0.699);
+}
+
+div, h1, h2, h3, h4, h5, h6, p, input, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    width: 100%;
+    max-width: 900px;
+    margin: 5px auto;
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right bottom, #ff0060, #fe0032);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header .header-title {
+    font-family: "webfont" !important;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.product-item {
+    width: 94%;
+    height: 120px;
+    margin: 9px auto;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 4px rgba(201, 206, 219, 0.699);
+}
+
+.product-item>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.product-item .preview {
+    float: left;
+    width: 35%;
+    height: 100%;
+}
+
+.product-item .preview .preview-img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.product-item .product-info {
+    position: relative;
+    float: right;
+    width: 65%;
+    height: 100%;
+    padding: 10px 10px;
+    color: black;
+}
+
+.product-info .product-title {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.product-title>img {
+    position: relative;
+    top: 3px;
+    height: 18px;
+    margin-right: 3px;
+}
+
+.product-info .discount {
+    width: 100%;
+    height: 18px;
+}
+
+.product-item .discount-item {
+    display: inline-block;
+    height: 16px;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 2px;
+    border: .5px solid #f1657a;
+    border-radius: 4px;
+    color: #ff103d;
+    margin-left: 2px;
+}
+
+.product-info .to-buy {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    right: 10px;
+    bottom: 10px;
+    width: 95px;
+    height: 40px;
+    background: linear-gradient(to right, #ff0060, #fe0032);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px #d408316c;
+}
+
+.to-buy .sold-count {
+    font-size: 12px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.to-buy .buy-now {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.product-info .price {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.price .price-now {
+    color: #ff0030;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price .price-old {
+    color: #999999;
+    font-size: 14px;
+    text-decoration: line-through;
+}

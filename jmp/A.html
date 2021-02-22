@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html style="height: 100%;overflow: hidden;">
+<head>
+    <title>A页面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body style="height: 100%;overflow: hidden;">
+<h4>A页面</h4>
+<button id="bt" οnclick="jump()">传参</button>
+<script type="text/javascript">
+    function jump(){
+        var name="跳转成功";
+        location.href="B.html?name="+name;
+    }
+</script>
+</body>
+</html>

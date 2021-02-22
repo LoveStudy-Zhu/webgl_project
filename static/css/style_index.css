@@ -1,0 +1,204 @@
+.body {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+}
+
+.main {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.tab {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(204, 204, 204, 0.2);
+	width: 100%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.openleft {
+	float: left;
+	height: 50px;
+	width: 50px;
+	box-sizing: border-box;
+
+}
+
+.line {
+	margin: 4px 15px;
+	background-color: #919191;
+	height: 4.8px;
+	width: 65%;
+}
+
+.tab_items {
+	position: relative;
+	font-weight: 600;
+
+	font-size: 1.2rem;
+	color: #222222;
+	float: left;
+	width: 27%;
+	height: 50px;
+}
+
+.tab_items .text {
+	color: #585858;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+.tab_items:hover {
+	color: #00bf00;
+}
+
+.tab_items:hover .selected {
+	position: absolute;
+	height: 3px;
+	width: 30px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #00bf00;
+}
+
+.contain {
+	
+	overflow-y: scroll;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 30px;
+	
+}
+
+.banner {
+	margin-top: 3px;
+	height: 180px;
+	width: 100%;
+}
+.function_tab{
+	width: 100%;
+	overflow: hidden;
+}
+.function{
+	
+	float: left;
+	width: 33%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.function_locate{	
+}
+.function .circle{
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	background-color:#39B54A;
+}
+.function .text{
+	margin: 5px 0;
+	font-size: 0.85rem;
+}
+.mes{
+	margin: 0 8px;
+	border-radius: 5px;
+	background-color: #F2F2F2;
+	height: 80px;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-top:15px;
+}
+
+.activity_title{
+	width: 100%;
+	height: 30px;
+	
+	
+}
+.battle{
+	margin: 5px 8px;
+	border-radius: 5px;
+	background-color: #F2F2F2;
+	height: 80px;
+	font-size: 1.5rem;
+	color: #797979;
+	box-sizing: border-box;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+.eggs{
+	margin: 5px 8px;
+	border-radius: 5px;
+	background-color: #F2F2F2;
+	height: 80px;
+	box-sizing: border-box;
+}
+.city_battle{
+	width: 100%;
+	height: 150px;
+}
+
+.tasks{
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #F2F2F2;
+	box-sizing: border-box;
+	width: 100%;
+	height: 80%;
+	border-radius: 20px;
+}
+
+.button{
+	color: white;
+	float: left;
+	width: 20%;
+	background-color: #39B54A;
+	text-align: center;
+	margin-right: 20px;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+.selected{
+	color: #585858;
+	background-color:unset;
+}
+.my_message{
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #F2F2F2;
+	box-sizing: border-box;
+	width: 80%;
+	height: 100%;
+	border-radius: 20px;
+}
+.head{
+	height: 80px;
+	display: flex;
+	
+	align-items: center;
+}
+.active{
+	display: block;
+}

@@ -1,0 +1,75 @@
+.html,body {
+	
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main{
+	background-image: url(../img/碳宝场景1_1.png);
+	-moz-background-size:100% 100%; background-size:100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.title{
+	color: #222222;
+	width: 100%;
+	height: 7%;
+	overflow: hidden;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	padding-left: 5px;
+}
+.mes{
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	
+}
+.a_mes{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+.a_mes img{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.process{
+	margin-left: 5px;
+	float: left;
+	width: 100px;
+	height: 15px;
+	background-color: white;
+}
+.process div{
+	
+}
+.func{
+	position: absolute;
+	bottom: 30px;
+	right: 10px;
+	
+}
+.func div{
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	box-shadow: #39B54A 5px 5px 5px 5px; 
+	margin-right: 20px;
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.func div img{
+	width: 50px;
+	height: 50px;
+}

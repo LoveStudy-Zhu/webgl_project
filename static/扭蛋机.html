@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我的扭蛋机</title>
+  <link rel="stylesheet" href="./src/css/扭蛋机.css">
+  <link rel="stylesheet" href="./src/css/扭蛋机动画.css">
+</head>
+
+<body>
+  <div id="container">
+	  <div id="title" class="title"  @click="Back">
+	  	<img src="img/arrow-lift.png" style="float: left;width: 40px;height: 40px;" />
+	  	<div style="float: left;color: white;">返回</div>
+	  </div>
+    <div class="cover" v-if="showDialog">
+      <div class="prompt">
+        <p class="reward-info">抽奖结果：{{reward}}</p>
+        <button class="confirm-btn" @click="handleConfirmBtnClick">确认</button>
+      </div>
+    </div>
+    <!-- 扭蛋机 -->
+    <div class="gashapon">
+      <div class="machine-body">
+        <img class="machine-body-img" src="./src/images/machine_body.png" alt="">
+        <button id="start-btn" @click="startDraw">
+          <p>100/次</p>
+        </button>
+        <p class="my-credit">{{myCredit}}</p>
+        <div class="egg-dome">
+          <div class="egg egg_1 drop_1" :class="{'shake_1':isDrawing}"></div>
+          <div class="egg egg_2 drop_2" :class="{'shake_2':isDrawing}"></div>
+          <div class="egg egg_3 drop_3" :class="{'shake_3':isDrawing}"></div>
+          <div class="egg egg_4 drop_4" :class="{'shake_4':isDrawing}"></div>
+          <div class="egg egg_5 drop_5" :class="{'shake_5':isDrawing}"></div>
+          <div class="egg egg_6 drop_6" :class="{'shake_6':isDrawing}"></div>
+          <div class="egg egg_7 drop_7" :class="{'shake_7':isDrawing}"></div>
+          <div class="egg egg_8 drop_8" :class="{'shake_8':isDrawing}"></div>
+          <div class="egg egg_9 drop_9" :class="{'shake_9':isDrawing}"></div>
+          <div class="egg egg_10 drop_10" :class="{'shake_10':isDrawing}"></div>
+          <div class="egg egg_11 drop_11" :class="{'shake_11':isDrawing}"></div>
+
+        </div>
+        <img class="hole" src="./src/images/hole.png" alt="">
+        <div :class="['eggHole',{'eggMoveToHole':showEggHole}]">
+          <img :src="rewardImgPath" alt="">
+        </div>
+      </div>
+    </div>
+    <!--球-->
+
+  </div>
+  <script src="./src/js/vue.js"></script>
+  <script src="./src/js/扭蛋机.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-size: 16px;
+  background: rgba(226, 228, 233, 0.699);
+}
+
+div, h1, h2, h3, h4, h5, h6, p, input, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  width: 100%;
+  max-width: 900px;
+  margin: 5px auto;
+  margin-bottom: 60px;
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right bottom, #ff0060, #fe0032);
+  box-shadow: 0 1px 3px #c90953c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* font-family: webfont; */
+  font-size: 16px;
+  z-index: 5;
+}
+
+.grid-item {
+  width: 48.5%;
+  max-width: 240px;
+  /* height: 270px; */
+  min-height: 200px;
+  margin: 0 0 5px 1%;
+  background-color: white;
+  /* border: 1px solid black; */
+  box-shadow: 0 2px 3px gainsboro;
+}
+
+.grid-item-1 {
+  height: 300px;
+}
+
+.grid-item>a {
+  display: block;
+  width: 100%;
+}
+
+.preview-img {
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+  max-height: 80px;
+}
+
+.title {
+  font-size: 14px;
+  color: black;
+  line-height: 16px;
+  max-height: 49px;
+  overflow: hidden;
+  padding: 2px 3px 0px 5px;
+  word-break: break-all;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fe0032;
+  margin: 5px 0 5px 2px;
+}
+
+.navigator-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  z-index: 5;
+  /* background: royalblue; */
+  background: white;
+  box-shadow: 0 -.5px 3px rgba(209, 207, 207, 0.664);
+}
+
+.navigator-bar .navigator-item {
+  width: 50px;
+  height: 50px;
+}
+
+.navigator-bar .icon {
+  display: block;
+  width: 30px;
+  height: 31px;
+  line-height: 50pxs;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.navigator-bar .name {
+  text-align: center;
+  font-size: 12px;
+}
+
+.navigator-item.active {
+  color: #ff0060;
+}
+
+.shopping-cart {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.shopping-cart .cart-item {
+  width: 95%;
+  height: 80px;
+  margin: 5px auto;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(197, 197, 199, 0.699);
+}
+
+.cart-item .preview-img {
+  display: block;
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+.cart-item .preview-img>img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.cart-item .info {
+  float: right;
+  width: 70%;
+  padding: 5px;
+}
+
+#settle-accounts{
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background: white;
+  border-top: .5px solid gainsboro;
+}
+
+#total-price {
+  position: absolute;
+  top: 50%;
+  right: 120px;
+  transform: translateY(-50%);
+  line-height: 20px;
+  float: right;
+  color: #ff0060;
+  font-size: 16px;
+}
+
+#settle-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  height: 100%;
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  background: #ff0060;
+  color: white;
+}
+
+#settle-btn:active{
+  opacity: .7;
+}

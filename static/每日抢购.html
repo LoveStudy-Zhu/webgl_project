@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>每日抢购</title>
+    <link rel="stylesheet" href="./src/css/font.css">
+    <link rel="stylesheet" href="./src/css/每日抢购.css">
+</head>
+
+<body>
+    <!-- <header class="page-header">
+        <h1 class="header-title">每日抢购</h1>
+    </header> -->
+
+    <div id="container">
+		
+        <div class="product-item" v-for="(item, index) in products">
+            <a :href="item.link" target="_blank" rel="noopener noreferrer">
+                <div class="preview">
+                    <img class="preview-img" :src="item.preview_img" alt="">
+                </div>
+                <div class="product-info">
+                    <!-- 年货节图标 -->
+                    <p class="product-title"><img src="./src/images/年货节.png" alt="" v-if="item.shopping_festival"><span
+                            v-text="item.product_name">米家台灯 Pro</span></p>
+                    <div class="discount">
+                        <div class="discount-item" v-for="dis in item.discount" v-text="dis">3期免息</div>
+                    </div>
+                    <p class="price">
+                        <span class="price-now" v-text="'￥' + item.price">￥299</span>
+                        <span class="price-old" v-text="item.price_old">399</span>
+                    </p>
+                    <div class="to-buy">
+                        <p class="sold-count"><span v-text="item.sold_counts">1234</span>件已售</p>
+                        <p class="buy-now">马上抢</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="./src/js/vue.min.js"></script>
+    <script src="./src/js/product.js"></script>
+    <script src="./src/js/每日抢购.js"></script>
+</body>
+
+</html>

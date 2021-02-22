@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+}
+
+:root{
+    --top: 0px;
+    --left: 0px;
+}
+
+.model_function_select{
+    border-radius: 10px;
+    position:absolute;
+    top: var(--top);
+    left: var(--left);
+    width: 250px;
+
+}
+
+.model_function_card{
+    margin: 10px 0;
+    box-shadow: 0 15px 30px 1px grey;
+    background: url(../img/边框.png) no-repeat;
+    height: 125px;
+}
+
+.btn_function_select{
+    border-radius: 10px;
+    color: white;
+    float: left;
+    background: #818481;
+    width: 50%;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+

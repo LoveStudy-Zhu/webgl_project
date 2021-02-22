@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c793ce04-41d0-4ffb-bf9e-5e4fe2c90f9b" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/test/js/data_json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/js/webgl_part.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/webgl_part.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="$PROJECT_DIR$/../../../go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/test" />
+  </component>
+  <component name="ProjectId" id="1bnXZPXPQ08yfUq3bHUM5Ovv854" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test_webgl/lib/model" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_webgl/lib/model" />
+      <recent name="$PROJECT_DIR$/test_webgl/lib/js/loaders" />
+      <recent name="$PROJECT_DIR$/test_webgl/lib/models" />
+      <recent name="$PROJECT_DIR$/test_webgl/lib/assets/models" />
+      <recent name="$PROJECT_DIR$/test_webgl/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_webgl/lib" />
+      <recent name="$PROJECT_DIR$/test/lib/model/万用表" />
+      <recent name="$PROJECT_DIR$/test_ui/css" />
+      <recent name="$PROJECT_DIR$/test_ui/img" />
+      <recent name="$PROJECT_DIR$/test/img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build GoCode/tanbao" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="tanbao" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <package value="GoCode/tanbao" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="tanbao" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="tanbao" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build tanbao" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="tanbao" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <package value="tanbao" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build tanbao" />
+        <item itemvalue="Go Build.go build GoCode/tanbao" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="282" y="18" key="#GOROOT" timestamp="1608029874702">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state x="282" y="18" key="#GOROOT/0.0.1366.725@0.0.1366.725" timestamp="1608029874702" />
+    <state x="141" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612410878562">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state x="141" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.725@0.0.1366.725" timestamp="1612410878562" />
+    <state x="497" y="168" width="364" height="401" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610629843365">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state x="497" y="168" width="364" height="401" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.725@0.0.1366.725" timestamp="1610629843365" />
+    <state x="420" y="106" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612580916152">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state x="420" y="106" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.725@0.0.1366.725" timestamp="1612580916152" />
+    <state width="1320" height="144" key="GridCell.Tab.0.bottom" timestamp="1613986258106">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state width="1320" height="144" key="GridCell.Tab.0.bottom/0.0.1366.725@0.0.1366.725" timestamp="1613986258106" />
+    <state width="1320" height="144" key="GridCell.Tab.0.center" timestamp="1613986258105">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state width="1320" height="144" key="GridCell.Tab.0.center/0.0.1366.725@0.0.1366.725" timestamp="1613986258105" />
+    <state width="1320" height="144" key="GridCell.Tab.0.left" timestamp="1613986258105">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state width="1320" height="144" key="GridCell.Tab.0.left/0.0.1366.725@0.0.1366.725" timestamp="1613986258105" />
+    <state width="1320" height="144" key="GridCell.Tab.0.right" timestamp="1613986258105">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state width="1320" height="144" key="GridCell.Tab.0.right/0.0.1366.725@0.0.1366.725" timestamp="1613986258105" />
+    <state x="205" y="0" width="926" height="725" key="find.popup" timestamp="1613967704063">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state x="205" y="0" width="926" height="725" key="find.popup/0.0.1366.725@0.0.1366.725" timestamp="1613967704063" />
+    <state x="346" y="46" width="672" height="678" key="search.everywhere.popup" timestamp="1612509056924">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state x="346" y="46" width="672" height="678" key="search.everywhere.popup/0.0.1366.725@0.0.1366.725" timestamp="1612509056924" />
+  </component>
+</project>
