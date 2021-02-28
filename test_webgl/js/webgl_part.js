@@ -3,7 +3,7 @@ var objects = [];
 var objectUuid = {};
 var shelvesLights = {};
 var modelPlaced = {};
-
+var warehouse = null;
 // 场景
 function initScene() {
     scene = new THREE.Scene();
@@ -64,7 +64,11 @@ function addModel(name,path,type,uuid,position) {
                 object.position.z = position.z;
             }
             scene.add(object);
-            objects.push(object);
+            if(type != '厂房'){
+                objects.push(object);
+            }else {
+                warehouse = object;
+            }
             objectUuid[uuid] = object;
         });
     });
@@ -96,7 +100,6 @@ function initDragControls() {
     dragControls.addEventListener('hoveron', function (event) {
         transformControls.setMode(app.transformModel);
         transformControls.attach(event.object);
-
     });
     // 开始拖拽
     dragControls.addEventListener('dragstart', function (event) {
@@ -108,14 +111,33 @@ function initDragControls() {
     });
 }
 
-// 初始化灯光
 function initLight() {
-    light = new THREE.SpotLight(0xffffff);
-    light.position.set(-300, 600, -400);
-    scene.add(light);
-    scene.add(new THREE.AmbientLight(0x444444));
+    addLight('AmbientLight',0x444444);
+    addLight('PointLight',0xffffff,[0,500,100],1.25);
+    // addLight('PointLight',0xffffff,[100,100,100],1);
+    // addLight('PointLight',0xffffff,[-100,100,100],1);
+    // addLight('PointLight',0xffffff,[0,5,0]);
 }
+function addLight(type,color,position,intensity) {
+    switch (type) {
+        case 'PointLight':
+            light = new THREE.PointLight(color);
+            light.position.set(position[0],position[1],position[2]);
+            if(intensity != undefined){
+                light.intensity = intensity;
+            }
+            //告诉平行光需要开启阴影投射
+            light.castShadow = true;
+            break;
+        case 'AmbientLight':
+            light = new THREE.AmbientLight(color);
+            break;
+        case 'SpotLight ':break;
+        case 'DirectinalLight ':break;
+    }
 
+    scene.add(light);
+}
 // 初始化
 function init() {
     initScene();

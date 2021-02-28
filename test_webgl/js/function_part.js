@@ -49,14 +49,15 @@ var app = new Vue({
             this.lightData = lightData
         },
         Add:function (type) {
-            this.gridShow = true;
+
 
             if(type=='shelves'){
                 this.gridData  = constShelvesData;
                 this.objType='货架';
-            }else{
+                this.gridShow = true;
+            }else if(type=='tools'){
                 this.shelvesData = [];
-
+                this.gridShow = true;
                 //更新添加货物select
                 for(key in this.shelves){
                     this.shelvesData.push(key);
@@ -67,6 +68,8 @@ var app = new Vue({
                     this.UpdateLight();
                 });
 
+            }else if(type=='warehouse'){
+                addModel('厂房','厂房','厂房', guid());
             }
 
         },
@@ -157,6 +160,7 @@ var app = new Vue({
                     this.shelves[key].children[i].scale = objectUuid[this.shelves[key].children[i].uuid].scale;
                 }
             }
+
             alert("保存成功");
             function ChangeStyle() {
                 tmp = app.shelves;
@@ -173,7 +177,7 @@ var app = new Vue({
                                 "path": child.name+"/file",
                                 "position":[],
                                 "rotate":child.rotate,
-                                "scale":child.scale
+                                "scale_xyz":child.scale
                             }
                         }
                         tmpkeyDict[child.name].position.push([
@@ -194,10 +198,22 @@ var app = new Vue({
                         "position":  [tmpData.position.x,tmpData.position.y,tmpData.position.z],
                         "child":childrenArr,
                         "rotate":tmpData.rotate,
-                        "scale":tmpData.scale
+                        "scale_xyz":tmpData.scale
                     })
                 }
-                console.log(JSON.stringify(data))
+                if(warehouse!=null){
+                    data.push({
+                        "name": "厂房",
+                        "type": "厂房",
+                        "format": "obj",
+                        "path":"厂房/file",
+                        "position": null,
+                        "scale": 1,
+                        "rotate": null,
+                        "child": []
+                    })
+                }
+               saveToDb(data);
             }
             ChangeStyle()
         },
@@ -206,3 +222,38 @@ var app = new Vue({
         }
     }
 });
+function saveToDb(positionData) {
+    axios({
+        url: 'http://123.56.238.156:9200/tool_position/webgl/_search',
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        data:{
+            "_source": false,
+            "query" : {
+                "match_all" : {}
+            }
+        }
+    }).then(res => {
+        total= res['data']['hits']['total'] +1 ;
+        axios({
+            url: 'http://123.56.238.156:9200/tool_position/webgl/'+total,
+            method: 'put',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data:{'information':positionData}
+        }).then(res => {
+        });
+        axios({
+            url: 'http://123.56.238.156:9200/model_placed/webgl/'+total,
+            method: 'put',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data:modelPlaced
+        }).then(res => {
+        });
+    });
+}

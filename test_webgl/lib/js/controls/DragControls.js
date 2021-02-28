@@ -49,7 +49,15 @@ THREE.DragControls = function ( _objects, _camera, _domElement ) {
 		_domElement.removeEventListener( 'touchend', onDocumentTouchEnd, false );
 
 	}
+	function forbid() {
+		_domElement.removeEventListener( 'mousedown', onDocumentMouseDown, false );
+		_domElement.removeEventListener( 'mouseup', onDocumentMouseCancel, false );
+		_domElement.removeEventListener( 'mouseleave', onDocumentMouseCancel, false );
+		_domElement.removeEventListener( 'touchmove', onDocumentTouchMove, false );
+		_domElement.removeEventListener( 'touchstart', onDocumentTouchStart, false );
+		_domElement.removeEventListener( 'touchend', onDocumentTouchEnd, false );
 
+	}
 	function dispose() {
 
 		deactivate();

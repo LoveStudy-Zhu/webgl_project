@@ -3,8 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="c793ce04-41d0-4ffb-bf9e-5e4fe2c90f9b" name="默认更改列表" comment="">
       <change afterPath="$PROJECT_DIR$/test/js/data_json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_webgl/lib/model/厂房/file.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_webgl/lib/model/厂房/file.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/js/function_select.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/function_select.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/js/webgl_part.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/webgl_part.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_webgl/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_webgl/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_webgl/js/function_part.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_webgl/js/function_part.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_webgl/js/webgl_part.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_webgl/js/webgl_part.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_webgl/lib/js/controls/DragControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_webgl/lib/js/controls/DragControls.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,19 +51,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test_webgl/lib/model" />
-      <recent name="$PROJECT_DIR$/test_webgl/lib/js/loaders" />
-      <recent name="$PROJECT_DIR$/test_webgl/lib/models" />
-      <recent name="$PROJECT_DIR$/test_webgl/lib/assets/models" />
-      <recent name="$PROJECT_DIR$/test_webgl/css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test_webgl/lib" />
       <recent name="$PROJECT_DIR$/test/lib/model/万用表" />
       <recent name="$PROJECT_DIR$/test_ui/css" />
       <recent name="$PROJECT_DIR$/test_ui/img" />
       <recent name="$PROJECT_DIR$/test/img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_webgl/lib/model" />
+      <recent name="$PROJECT_DIR$/test_webgl/lib/js/loaders" />
+      <recent name="$PROJECT_DIR$/test_webgl/lib/models" />
+      <recent name="$PROJECT_DIR$/test_webgl/lib/assets/models" />
+      <recent name="$PROJECT_DIR$/test_webgl/css" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go">
@@ -122,6 +132,10 @@
       <screen x="0" y="0" width="1366" height="725" />
     </state>
     <state x="420" y="106" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.725@0.0.1366.725" timestamp="1612580916152" />
+    <state x="451" y="120" width="426" height="496" key="FileChooserDialogImpl" timestamp="1614419047861">
+      <screen x="0" y="0" width="1366" height="725" />
+    </state>
+    <state x="451" y="120" width="426" height="496" key="FileChooserDialogImpl/0.0.1366.725@0.0.1366.725" timestamp="1614419047861" />
     <state width="1320" height="144" key="GridCell.Tab.0.bottom" timestamp="1613986258106">
       <screen x="0" y="0" width="1366" height="725" />
     </state>
@@ -138,10 +152,10 @@
       <screen x="0" y="0" width="1366" height="725" />
     </state>
     <state width="1320" height="144" key="GridCell.Tab.0.right/0.0.1366.725@0.0.1366.725" timestamp="1613986258105" />
-    <state x="205" y="0" width="926" height="725" key="find.popup" timestamp="1613967704063">
+    <state x="205" y="0" width="1026" height="725" key="find.popup" timestamp="1614496548219">
       <screen x="0" y="0" width="1366" height="725" />
     </state>
-    <state x="205" y="0" width="926" height="725" key="find.popup/0.0.1366.725@0.0.1366.725" timestamp="1613967704063" />
+    <state x="205" y="0" width="1026" height="725" key="find.popup/0.0.1366.725@0.0.1366.725" timestamp="1614496548219" />
     <state x="346" y="46" width="672" height="678" key="search.everywhere.popup" timestamp="1612509056924">
       <screen x="0" y="0" width="1366" height="725" />
     </state>
