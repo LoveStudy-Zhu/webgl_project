@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c793ce04-41d0-4ffb-bf9e-5e4fe2c90f9b" name="默认更改列表" comment="">
       <change afterPath="$PROJECT_DIR$/test/js/data_json.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_webgl/lib/model/厂房/file.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_webgl/lib/model/厂房/file.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/js/function_select.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/function_select.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/js/webgl_part.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/js/webgl_part.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_webgl/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_webgl/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_webgl/js/function_part.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_webgl/js/function_part.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_webgl/js/webgl_part.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_webgl/js/webgl_part.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_webgl/lib/js/controls/DragControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_webgl/lib/js/controls/DragControls.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +24,7 @@
   </component>
   <component name="GOROOT" path="$PROJECT_DIR$/../../../go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/test" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bnXZPXPQ08yfUq3bHUM5Ovv854" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

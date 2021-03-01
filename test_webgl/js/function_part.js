@@ -15,7 +15,7 @@ function shelveLightEmissive(shelfName,lightName,type){
 
 }
 const constShelvesData = ['衣架','货架4','货架6'];
-const toolsData = ['电焊帽','电钻','电笔'];
+const toolsData = ['电焊帽','电钻','电笔','万用表','五金工具','安全帽','电缆','电钻','绝缘剥线器','绝缘跳线','绝缘遮蔽罩'];
 var app = new Vue({
     el:'#app',
     data:{
